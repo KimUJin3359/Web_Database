@@ -117,3 +117,5 @@
     ```
     - ASC : 오름차순
     - DESC : 내림차순
+  - [ex01](https://github.com/KimUJin3359/Web_Database/blob/master/ex01.sql)    
+  - [ex02](https://github.com/KimUJin3359/Web_Database/blob/master/ex02.sql)
