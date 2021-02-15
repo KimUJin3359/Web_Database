@@ -263,8 +263,10 @@
   - 값이 NULL이 아니면 true
 - ifnull(${Field name}, (value))
   - 만약 필드의 값이 NULL이라면, 대체값으로 출력
+  - [ex16](https://github.com/KimUJin3359/Web_Database/blob/master/ex16.null.sql)
 - concat((value1), (value2), ...)
   - 값을 합치는 함수
+  - [ex15](https://github.com/KimUJin3359/Web_Database/blob/master/ex15.concat.sql)
 - convert(${Field name}, (char, ...))
   - char, int, datetime 등
 - 문자열 함수
@@ -289,8 +291,36 @@
   UNION
   SELECT ${Column name} FROM ${Table name};
   */
+  ```
+  - [ex17](https://github.com/KimUJin3359/Web_Database/blob/master/ex17.union.sql)
 - **join(교집합)**
-  - 
-- **subquery**
+  - INNER join
+    - 일반적인 경우(교집합)
+    ```
+    SELECT ${Column name}, ...
+    FROM ${Table name} JOIN ${Table name}
+    ON(or WHERE) (조건);
+    ```
+  - OUTER join
+    - 교집합에 포함되지 않는 다른 구성원도 보고싶을 경우
+    ```
+    SELECT ${Column name}, ...
+    FROM ${Table name} LEFT(or RIGHT) OUTER JOIN ${Table name}
+    ON(or WHERE) (조건);
+    ```
+    - A LEFT JOIN B
+      - A의 모든 구성원
+    - A RIGHT JOIN B
+      - B의 모든 구성원
+  - NATURAL join
+    - on 절이 없는 내부조인
+    - 같은 열이름을 가진 두 테이블을 조인할 때만 사용
+  - [ex18](https://github.com/KimUJin3359/Web_Database/blob/master/ex18.join.sql)    
+- **subquery(차집합)**
+  ```
+  SELECT ${Column name}, ...
+  FROM ${Table name}
+  WHERE ${Column name} NOT IN (SELECT ${Column name} FROM ${Table name});
+  ```
   
    
