@@ -166,22 +166,22 @@
   ```
   #INSERT INTO ${Table name} VALUES (value1, value2, ...)
   ```
-  - [실습3](https://github.com/KimUJin3359/Web_Database/blob/master/ex03.insert.sql)
+  - [ex03](https://github.com/KimUJin3359/Web_Database/blob/master/ex03.insert.sql)
 - R : select
 - U : update ~ set where
   ```
   #UPDATE ${Table name} SET ${Field name} = (값) WHERE (조건)
   ```
-  - [실습4](https://github.com/KimUJin3359/Web_Database/blob/master/ex04.update.sql)
+  - [ex04](https://github.com/KimUJin3359/Web_Database/blob/master/ex04.update.sql)
 - D : delete from ~ where
-  - [실습5](https://github.com/KimUJin3359/Web_Database/blob/master/ex05.delete.sql)
+  - [ex05](https://github.com/KimUJin3359/Web_Database/blob/master/ex05.delete.sql)
 - UPDATE Error 발생
   - Safe update mode(MySQL Workbench)
     - 다수의 레코드들이 한꺼번에 UPDATE 되는사고를 막기 위함
     - 에러 발생 경우
       - 조건문을 붙이지 않는 경우
       - where문에서 key column 조건이 없는 경우
-- [실습6](https://github.com/KimUJin3359/Web_Database/blob/master/ex06.exercise.sql)      
+- [ex06](https://github.com/KimUJin3359/Web_Database/blob/master/ex06.exercise.sql)      
 - DB server 관리 도구
   - MySQL Workbench(GUI)
     - 대량의 데이터에도 구조를 쉽게 파악 가능
