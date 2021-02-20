@@ -239,7 +239,7 @@
     - 날짜 + 시간을 나타냄
     - YYYY-MM-DD HH:MM:SS
   - [ex10](https://github.com/KimUJin3359/Web_Database/blob/master/ex10.date.sql)
-  - [ex1]](https://github.com/KimUJin3359/Web_Database/blob/master/ex11.exercise.sql)
+  - [ex11](https://github.com/KimUJin3359/Web_Database/blob/master/ex11.exercise.sql)
 - 데이터 타입 변경하기
   - DATE -> STRING
     - date_format 함수 사용
